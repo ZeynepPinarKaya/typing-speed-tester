@@ -1,0 +1,56 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: center;
+}
+
+.masthead{
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    background: bisque;
+}
+
+.origin-text{
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    height: 50%;
+    background: lightgray;
+}
+
+.origin-text p{
+    text-align: left;
+}
+
+.test-wrapper{
+    text-align: center;
+}
+
+#test-area{
+    margin: 5px;
+    border: 4px solid gray;
+    width: 40%;
+    padding: 5px;
+}
+
+.meta{
+    text-align: center;
+}
+
+.meta #clock{
+    font-size: 50px;
+    margin: auto;
+}
+
+.meta #reset{
+    margin: 5px 0;
+    font-size: 20px;
+}
