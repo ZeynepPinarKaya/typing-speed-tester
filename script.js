@@ -17,7 +17,6 @@ function leadingZero(time) {
     return time;
 }
 
-
 //Run a standard minute/second/hundredths timer: 
 function runTimer() {
     let currentTime = leadingZero (timer[0]) + ":" + leadingZero(timer[1]) + ":" + leadingZero(timer[2]);
@@ -30,7 +29,6 @@ function runTimer() {
 }
 
 
-
 //Match the text entered with the provided text on the page: 
 function spellCheck() {
     let textEntered = testArea.value;
@@ -39,6 +37,8 @@ function spellCheck() {
     if (textEntered == originText) {
         clearInterval(interval);
         testWrapper.style.borderColor = "#429890";
+        console.log("You Won!");
+        alert("You Won!");
     } else {
         if (textEntered == originTextMatch) {
             testWrapper.style.borderColor = "#65CCf3";
@@ -57,7 +57,6 @@ function start() {
         timerRunning = true;
         interval = setInterval(runTimer, 10);
     }
-    console.log(textEnteredLength);
 }
 
 
@@ -71,12 +70,10 @@ function reset(){
     testArea.value = "";
     theTimer.innerHTML = "00:00:00";
     testWrapper.style.borderColor = "grey";
-
-    console.log("reset button has been pressed");
 }
 
 
 //Event listeners for keyboard and reset button:
 testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellCheck, false);
-resetButton.addEventListener("click", reset, false)
+resetButton.addEventListener("click", reset, false);
