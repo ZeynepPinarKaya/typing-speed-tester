@@ -1,5 +1,6 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility;
 }
 
 body{
@@ -19,11 +20,11 @@ p{
 }
 
 .origin-text{
-    margin: auto;
+    margin: 10px auto ;
     padding: 10px;
-    width: 40%;
-    height: 50%;
+    width: 50%;
     background: lightgray;
+    border-radius: 5px;
 }
 
 .origin-text p{
@@ -31,14 +32,19 @@ p{
 }
 
 .test-wrapper{
+    padding: 5px;
+    margin:10px auto;
     text-align: center;
+    border: 5px solid gray;
+    border-radius: 4px;
+    width: 50%;
 }
 
-#test-area{
-    margin: 5px;
-    border: 4px solid gray;
-    width: 40%;
-    padding: 5px;
+.test-wrapper textarea{
+    width: 98%;
+    outline: none;
+    border: none;
+    resize: none;
 }
 
 .meta{
@@ -50,7 +56,11 @@ p{
     margin: auto;
 }
 
-.meta #reset{
+.meta button{
     margin: 5px 0;
-    font-size: 20px;
+    font-size: 25px; 
+    background-color: orange;   
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5%;
 }
