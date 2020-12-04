@@ -36,7 +36,7 @@ function spellCheck() {
 
     if (textEntered == originText) {
         clearInterval(interval);
-        testWrapper.style.borderColor = "#429890";
+        testWrapper.style.borderColor = "#6ecf5d";
         console.log("You Finished!");
         alert("You Finished!");
     } else {
@@ -44,7 +44,7 @@ function spellCheck() {
             testWrapper.style.borderColor = "#65CCf3";
         }
         else {
-            testWrapper.style.borderColor = "#e95D0F";
+            testWrapper.style.borderColor = "#e90f0f";
         }
     }
 }
