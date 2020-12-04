@@ -37,8 +37,8 @@ function spellCheck() {
     if (textEntered == originText) {
         clearInterval(interval);
         testWrapper.style.borderColor = "#429890";
-        console.log("You Won!");
-        alert("You Won!");
+        console.log("You Finished!");
+        alert("You Finished!");
     } else {
         if (textEntered == originTextMatch) {
             testWrapper.style.borderColor = "#65CCf3";
